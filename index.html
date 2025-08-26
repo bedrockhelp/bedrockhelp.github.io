@@ -3,60 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Speed For Trees – Download</title>
+  <title>Speed For Trees</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
-      padding: 40px;
-      background: #eefaf1;
-      color: #2b3a33;
-    }
-    h1 {
-      margin-bottom: 20px;
-      font-size: 2.5em;
-    }
-    .buttons {
-      margin-top: 40px;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('images.jfif') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .button {
-      background: #4CAF50;
+      align-items: center;
+      height: 100vh;
       color: white;
-      padding: 20px 40px;
-      border: none;
-      border-radius: 8px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
       font-size: 1.2em;
-      text-decoration: none;
-      transition: background 0.3s;
+      margin-bottom: 30px;
     }
-    .button:hover {
-      background: #45a049;
+
+    .buttons {
+      display: flex;
+      gap: 20px;
     }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #555;
+
+    .store-button {
+      display: inline-block;
+      width: 160px;
+      height: 60px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .app-store {
+      background-image: url('https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg');
+    }
+
+    .google-play {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg');
+    }
+
+    @media (max-width: 600px) {
+      .store-button {
+        width: 120px;
+        height: 45px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Play Speed For Trees</h1>
-  <p>The eco‑friendly endless‑runner game that plants real trees as you play!</p>
+  <h1>Speed For Trees</h1>
+  <p>Now available on iOS and Android</p>
   <div class="buttons">
-    <a class="button" href="https://apps.apple.com/us/app/speed-for-trees/id6594665935" target="_blank">
-      Download on the App Store
-    </a>
-    <a class="button" href="https://play.google.com/store/apps/details?id=com.NeedForTrees.NeedForTrees3D" target="_blank">
-      Get it on Google Play
-    </a>
+    <a class="store-button app-store" href="https://apps.apple.com/us/app/speed-for-trees/id6594665935" target="_blank"></a>
+    <a class="store-button google-play" href="https://play.google.com/store/apps/details?id=com.NeedForTrees.NeedForTrees3D" target="_blank"></a>
   </div>
-  <footer>
-    <p>© 2025 Speed For Trees by Ashton Martin / Prime Capitol</p>
-  </footer>
 </body>
 </html>
