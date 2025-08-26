@@ -20,9 +20,10 @@
       text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    .logo {
+      width: 300px;
+      max-width: 90%;
+      margin-bottom: 20px;
     }
 
     p {
@@ -33,6 +34,8 @@
     .buttons {
       display: flex;
       gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .store-button {
@@ -41,6 +44,11 @@
       height: 60px;
       background-size: contain;
       background-repeat: no-repeat;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .store-button:active {
+      transform: scale(0.95);
     }
 
     .app-store {
@@ -53,26 +61,40 @@
 
     @media (max-width: 600px) {
       .store-button {
-        width: 120px;
-        height: 45px;
-      }
-
-      h1 {
-        font-size: 2em;
+        width: 130px;
+        height: 50px;
       }
 
       p {
         font-size: 1em;
       }
     }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+      text-shadow: none;
+    }
   </style>
 </head>
 <body>
-  <h1>Speed For Trees</h1>
+  <!-- Logo -->
+  <img src="logo.jpg" alt="Speed For Trees Logo" class="logo" />
+
+  <!-- Subtitle -->
   <p>Now available on iOS and Android</p>
+
+  <!-- Download Buttons -->
   <div class="buttons">
-    <a class="store-button app-store" href="https://apps.apple.com/us/app/speed-for-trees/id6594665935" target="_blank"></a>
-    <a class="store-button google-play" href="https://play.google.com/store/apps/details?id=com.NeedForTrees.NeedForTrees3D" target="_blank"></a>
+    <a class="store-button app-store" href="https://apps.apple.com/us/app/speed-for-trees/id6594665935" target="_blank" title="Download on App Store"></a>
+    <a class="store-button google-play" href="https://play.google.com/store/apps/details?id=com.NeedForTrees.NeedForTrees3D" target="_blank" title="Get it on Google Play"></a>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Speed For Trees • Made by Prime Capitol
+  </footer>
 </body>
 </html>
